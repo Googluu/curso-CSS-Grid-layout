@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+  --skin: #f6c09c;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+}
+
+body {
+    margin: 0;
+    background: #ed2860;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cabeza {
+  background: var(--skin);
+  width: 168px;
+  height: 320px;
+  border-radius: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.frente {
+  height: 87px;
+  clip-path: circle(50% at 50% 100%);
+  background: var(--skin);
+  z-index: 15;
+  position: relative;
+}
+
+.nariz {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--skin);
+  position: absolute;
+  left: 60px;
+  top: 115px;
+  z-index: 5;
+}
+
+.cuello {
+  width: 116px;
+  height: 95px;
+  background: var(--skin);
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  left: 30px;
+}
+
+.ojo-izq {
+  width: 43px;
+  height: 43px;
+  background: var(--white);
+  position: absolute;
+  left: 43px;
+  top: 75px;
+  border-radius: 50%;
+}
+
+.pupila-izq {
+  width: 7px;
+  height: 7px;
+  background: var(--black);
+  position: absolute;
+  top: 18px;
+  border-radius: 50%;
+  left: 18px;
+}
+
+.ojo-der {
+  width: 43px;
+  height: 43px;
+  background: var(--white);
+  position: absolute;
+  right: 43px;
+  top: 75px;
+  border-radius: 50%;
+}
+
+.pupila-der {
+  width: 7px;
+  height: 7px;
+  background: var(--black);
+  position: absolute;
+  top: 18px;
+  border-radius: 50%;
+  left: 18px;
+}
+
+.barba-sup {
+  position: absolute;
+  width: 168px;
+  height: 140px;
+  top: 40%;
+  border-radius: 35%;
+  background: var(--black);
+}
+
+.barba-inf {
+  position: absolute;
+  width: 168px;
+  height: 178px;
+  top: 45%;
+  border-radius: 45%;
+  background: var(--black);
+  z-index: 4;
+}
+
+.boca {
+  clip-path: circle(50% at 50% 0%);
+  width: 72px;
+  height: 70px;
+  background: var(--white);
+  position: absolute;
+  top: 176px;
+  left: 49px;
+  z-index: 100;
+  background: var(--dark-red);
+}
+
+.lengua {
+  width: 40px;
+  height: 20px;
+  top: 20px;
+  z-index: 100;
+  background: var(--red);
+  position: relative;
+  border-radius: 5px;
+}
+
+.dientes {
+  width: 55px;
+  height: 14px;
+  top: -2px;
+  left:-1px;
+  z-index: 100;
+  background: var(--white);
+  position: absolute;
+  border-radius: 5px;
+}
+.oreja-izq {
+  width: 33px;
+  height: 33px;
+  background: var(--skin);
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  z-index: 2;
+}
+
+.oreja-der {
+  width: 33px;
+  height: 33px;
+  background: var(--skin);
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  right: -20px;
+  z-index: 2;
+}
+
+.borde-o {
+  overflow: hidden;
+}
+
+.op5 {
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="cabeza">
+            <div class="oreja-izq op5"></div>
+            <div class="oreja-der op5"></div>
+            <div class="frente"></div>
+            <div class="ojo-izq">
+              <div class="pupila-izq"></div>
+          </div>
+          <div class="ojo-der">
+            <div class="pupila-der"></div>
+          </div>
+          <div class="nariz"></div>
+          <div class="barba-sup"></div>
+          <div class="barba-inf "></div>
+          <div class="boca borde-o">
+              <div class="lengua"></div>
+              <div class="dientes"></div>
+              <div class="lengua"></div>
+          </div>
+        <div class="cuello op5"></div>
+        </div> 
+      
+      
+      </div>
+</body>
+</html>
